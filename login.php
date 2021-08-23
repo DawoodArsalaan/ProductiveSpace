@@ -31,7 +31,7 @@ if(isset($_POST['signin']));
             $_SESSION['name']=$name;
 
             echo "<script type='text/javascript'>alert('Logged In Successfully');
-            document.location='homelogged.html'</script>";
+            document.location='indexlogged.html'</script>";
          }
 
 }
