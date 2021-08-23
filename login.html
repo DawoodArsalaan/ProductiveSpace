@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/login.css">
+    </head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="media/Bg1.mp4" type="video/mp4">
+    </video>
+    <div class="main">
+        <section class="sign-in">
+            <header class="title"><a href="home.html" class="signup-image-link"> 
+                Productive Space
+            </header></a>
+            <div class="container">   
+                <p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
+                <form action="login.php" method="POST" class="login-email">
+                    <div class="input-group">
+                        <input type="text" name="name" id="name" placeholder="Your Name" class=""required = ""/>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password"required=""/>
+                    </div>
+                    <div class="input-group">
+                        <input type="submit" name="signin" id="signin" class="btn" value="Log in"/>
+                    </div>
+                </form>
+                <div>
+                    <p class="login-register-text">Don't have an account? <a href="register.html">Register Here</a>.</p>
+                    
+                </div>
+            </div>
+            
+        </section>
+
+    </div>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+</body>
+</html>

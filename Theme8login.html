@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Theme</title>
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/templatetheme-style.css" />
+    <link rel="stylesheet" href="css/weatherclock.css" />
+    <link rel="stylesheet" href="css/To-do list.css" />
+    <link rel="stylesheet" href="css/timer.css" />
+
+
+  </head>
+  <body>    
+
+
+
+      <video autoplay muted loop id="myVideo">
+        <source src="media/Bg8.mp4" type="video/mp4">
+      </video>
+      
+      <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
+        <div class="container">   
+          <div class="tm-next">
+              <a href="home.html" class="navbar-brand">Productive Space</a>
+          </div>               
+        </div>
+      </nav>
+      
+      <div class="text-container-inner">
+              <div class="container">
+                <div class="current-info">
+                    <div class="date-container">
+                        <div class="time" id="time">
+                            12:30 <span id="am-pm">PM</span>
+                        </div>
+                        <div class="date" id="date">
+                            Monday, 25 May
+                        </div>
+        
+                        <div class="others" id="current-weather-items">
+                            Sunrise  &nbsp; --Am/Pm<br>
+                            Sunset  &nbsp; --Am/Pm
+                            
+                        </div>
+                    </div>
+                    <div class="future-forecast">
+                      <div class="today" id="current-temp">
+                          <img src="media/10d@2x.png">
+                          <div class="other">
+                              <div class="day">Monday</div>
+                              <div class="temp">Day  35.6&#176; C</div>
+                              <div class="temp">Night  25.6&#176; C</div>
+                          </div>
+                      </div>
+                    </div>   
+                  </div>
+                  <div class="place-container">
+                    <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+                    <div id="country" class="country">IN</div>
+                  </div>
+              </div>
+        
+
+             <div class="wrapper">
+              <header>To-do List</header>
+              <div class="inputField">
+                <input type="text" placeholder="Add your new todo">
+                <button><i style="vertical-align: 10px;" class="fa fa-plus"></i></button>
+              </div>
+              <ul class="todoList">
+                
+                <!-- data comes from local storage -->
+              </ul>
+              <div class="footer">
+                <span>You have <span class="pendingTasks"></span> pending tasks</span>
+                <button>Clear All</button>
+              </div>
+            </div>
+        </div>        
+      <div class = "timer-box">
+        <header>Pomodoro Timer</header>
+        <figure class="clock">
+          <div class="mins">00</div>
+          <div>:</div>
+          <div class="secs">00</div>
+          <audio
+            src="media/bell.mp3"
+          ></audio>
+          <svg class="progress-ring" height="120" width="120">
+            <circle
+              class="progress-ring__circle"
+              stroke-width="8"
+              fill="transparent"
+              r="50"
+              cx="60"
+              cy="60"
+            />
+          </svg>
+        </figure>
+    
+        <div class="btn-group">
+          <button class="start">Focus Start</button>
+          <button class="reset">Reset</button>
+          <button class="pause">Pause</button>
+        </div>
+    
+        <form action=".">
+          <label style="width: 65px;" for="focusTime">Focus Time</label>
+          <input class="timer" type="number" value="1" id="focusTime"/>
+          <label style="width: 65px;" for="breakTime">Break Time</label>
+          <input class="timer" type="number" value="1" id="breakTime"/>
+          <button type="submit" style="width: 65px;"><i class="fa fa-save"></i></button>
+        </form>
+      </div>
+
+      <div id="float">
+        <div class="text-right">
+          <ul class="float">
+            <li><img src="media/play.png" id="floatimg1" title="Music 1"></li>
+            <li><img src="media/play.png" id="floatimg2" title="Music 2"></li>
+            <li><img src="media/play.png" id="floatimg3" title="Music 3"></li>
+            <li><img src="media/play.png" id="floatimg4" title="Music 4"></li>
+            <li><img src="media/play.png" id="floatimg5" title="Music 5"></li>
+            <li><img src="media/play.png" id="floatimg6" title="Music 6"></li>
+            <li><img src="media/play.png" id="floatimg7" title="Music 7"></li>
+            <li><img src="media/play.png" id="floatimg8" title="Music 8"></li>
+            <li><img src="media/play.png" id="floatimg9" title="Music 9"></li>
+            <li><img src="media/play.png" id="floatimg10" title="Music 10"></li>
+            </ul>
+          </div>
+        </div>
+
+        <audio id="song" src="media/song.mp3" type="audio/mp3"></audio>
+        <audio id="song1" src="media/song1.mp3" type="audio/mp3"></audio>
+        <audio id="song2" src="media/song2.mp3" type="audio/mp3"></audio>
+        <audio id="song3" src="media/song3.mp3" type="audio/mp3"></audio>
+        <audio id="song4" src="media/song4.mp3" type="audio/mp3"></audio>
+        <audio id="song5" src="media/song5.mp3" type="audio/mp3"></audio>
+        <audio id="song6" src="media/song6.mp3" type="audio/mp3"></audio>
+        <audio id="song7" src="media/song7.mp3" type="audio/mp3"></audio>
+        <audio id="song8" src="media/song8.mp3" type="audio/mp3"></audio>
+        <audio id="song9" src="media/song9.mp3" type="audio/mp3"></audio>
+
+
+        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/weatherclock.js"></script>
+    <script src="js/To-do list.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/timersettings.js"></script>
+    <script src="js/timerprogress.js"></script>
+    <script src="js/float.js"></script>
+  </body>
+  <footer>&copy;Productive Space 2021</footer>
+</html>
