@@ -13,7 +13,7 @@ endif;
      session_destroy();
 
      echo '<meta http-equiv="refresh" content="2;url=login.html">';
-     echo '<progress max=100><strong>Progress: 50% done.</strong></progress><br>';
+     echo '<progress max=100><strong>Progress: 60% done.</strong></progress><br>';
      echo '<span class="itext">Logging out please wait!...</span>';
 
     ?>
